@@ -1,32 +1,27 @@
-# Khoj — Camp Hunt PWA
+# Khoj / Hidden Gujarat — public PWA
 
-Procedural Where’s-Wally-style camp hunt. Crowds are kit-built (age, sex, build, hair, hat, clothes, held item, pose) and dropped into Gujarati-flavoured camps.
+This repo is the **public host** (GitHub Pages).
 
-Live repo: https://github.com/kambasana/khoj-camp-hunt
+The real game and painted boards live in the private repo
+[`kambasana/hidden-gujarat`](https://github.com/kambasana/hidden-gujarat):
 
-## Hook to Cloudflare Pages
+- `dist/assets/districts/*.webp` — accepted 1536×1024 hunt boards
+- `*-calibration.mjs` — pixel hits
+- `docs/WORKFLOW.md` — how a board becomes production
 
-1. Open [Cloudflare Pages](https://dash.cloudflare.com/?to=/:account/pages)
-2. **Create application → Pages → Connect to Git**
-3. Select `kambasana/khoj-camp-hunt`
-4. Settings:
-   - Framework preset: **None**
-   - Build command: *(leave empty)*
-   - Build output directory: `/`
-5. Deploy. You get `https://khoj-camp-hunt.pages.dev` (or your project name).
-6. Optional: attach a custom domain.
+## Play
 
-Later pushes to `main` auto-deploy.
+https://kambasana.github.io/khoj-camp-hunt/
 
-## Local
+After a board is accepted in `hidden-gujarat`, copy it here to:
 
 ```
-npx serve .
+img/scenes/{name}.webp
 ```
 
-## Modes
+The player also looks at repo root and `./assets/districts/`.
 
-- Level camps — 10 themed maps, unlock in order
-- Endless — new seed each wave
+## Do not
 
-Hints can be Open (unlimited) or Locked.
+- Do not keep a second art catalogue here.
+- Do not ship stick-figure crowds as the product look.
