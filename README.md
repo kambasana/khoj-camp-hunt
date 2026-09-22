@@ -1,44 +1,9 @@
-# Khoj — Hidden Gujarat hunt
+# Hidden Gujarat
 
-Public PWA for a Where’s-Wally-style hunt through painted Gujarati districts.
+Photoreal hidden-object journey. Four accepted chapters are playable: Navratri, Ahmedabad, Jamnagar, and Kutch. Each chapter is four 1536×1024 districts with hand-measured hit shapes, English and Gujarati names, and two-stage clues.
 
-**Play:** https://kambasana.github.io/khoj-camp-hunt/
+Junagadh, Surat, Patan, and Garba stay out until their boards are painted and calibrated to the same bar. The old stick-figure hunt is gone.
 
-Private source of truth: [`kambasana/hidden-gujarat`](https://github.com/kambasana/hidden-gujarat)
+Source of truth for the engine is the private `hidden-gujarat` repository. This repository is the public game.
 
-```
-hidden-gujarat          khoj-camp-hunt
-art + engine + tests    public host / Pages / PWA
-dist/assets/districts → img/scenes/
-```
-
-## Modes
-
-- Level camps — painted places, unlock in order
-- Endless — new seed each wave
-- Hints Open or Locked
-- EN / ગુ / both
-
-## Deploy
-
-GitHub Pages deploys from `main` via `.github/workflows/pages.yml`.
-
-Cloudflare Pages (optional):
-
-1. Create application → Connect `kambasana/khoj-camp-hunt`
-2. Framework: None. Build command empty. Output: `/`
-3. Live at `https://khoj-camp-hunt.pages.dev`
-
-## Sync boards
-
-In `hidden-gujarat` add secret `PUBLIC_PWA_TOKEN` (Contents write on this repo),
-then run **Sync accepted boards to public PWA**.
-
-Or copy by hand:
-
-```
-cp hidden-gujarat/dist/assets/districts/*-district-*.webp img/scenes/
-```
-
-Skip `*-preview.webp`. Until boards arrive, the Pages workflow paints stand-ins
-and the player falls back to a canvas scene so the hunt still runs.
+Play: https://kambasana.github.io/khoj-camp-hunt/

@@ -1,15 +1,14 @@
 {
-  "name": "Khoj — Hidden Gujarat",
-  "short_name": "Khoj",
-  "description": "Find hidden things in painted Gujarati districts. Levels and endless mode.",
-  "start_url": "./index.html",
+  "name": "Hidden Gujarat",
+  "short_name": "Gujarat",
+  "description": "A photoreal hidden-object journey through Gujarat.",
+  "start_url": "./",
   "scope": "./",
   "display": "standalone",
-  "orientation": "any",
-  "background_color": "#fffaf2",
-  "theme_color": "#1a1a1a",
+  "background_color": "#181b1a",
+  "theme_color": "#181b1a",
   "lang": "en",
   "icons": [
-    { "src": "./icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
+    { "src": "icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
   ]
 }
