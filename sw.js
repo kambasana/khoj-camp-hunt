@@ -1,5 +1,5 @@
-const CACHE = "khoj-v2";
-const PRECACHE = ["./", "./index.html", "./manifest.json", "./icon.svg"];
+const CACHE = "khoj-v4";
+const PRECACHE = ["./", "./index.html", "./manifest.json", "./icon.svg", "./game.js"];
 self.addEventListener("install", e => {
   e.waitUntil(
     caches.open(CACHE).then(c => Promise.allSettled(PRECACHE.map(u => c.add(u)))).then(() => self.skipWaiting())
