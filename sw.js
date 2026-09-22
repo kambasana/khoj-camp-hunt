@@ -1,4 +1,4 @@
-const CACHE = "khoj-v4";
+const CACHE = "khoj-v5";
 const PRECACHE = ["./", "./index.html", "./manifest.json", "./icon.svg", "./game.js"];
 self.addEventListener("install", e => {
   e.waitUntil(

@@ -1,7 +1,7 @@
 {
-  "name": "Khoj — Camp Hunt",
+  "name": "Khoj — Hidden Gujarat",
   "short_name": "Khoj",
-  "description": "A Where's-Wally style camp hunt. Procedural crowds, Gujarati festival camps, endless or level mode.",
+  "description": "Find hidden things in painted Gujarati districts. Levels and endless mode.",
   "start_url": "./index.html",
   "scope": "./",
   "display": "standalone",

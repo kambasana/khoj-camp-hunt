@@ -1,27 +1,44 @@
-# Khoj / Hidden Gujarat — public PWA
+# Khoj — Hidden Gujarat hunt
 
-This repo is the **public host** (GitHub Pages).
+Public PWA for a Where’s-Wally-style hunt through painted Gujarati districts.
 
-The real game and painted boards live in the private repo
-[`kambasana/hidden-gujarat`](https://github.com/kambasana/hidden-gujarat):
+**Play:** https://kambasana.github.io/khoj-camp-hunt/
 
-- `dist/assets/districts/*.webp` — accepted 1536×1024 hunt boards
-- `*-calibration.mjs` — pixel hits
-- `docs/WORKFLOW.md` — how a board becomes production
-
-## Play
-
-https://kambasana.github.io/khoj-camp-hunt/
-
-After a board is accepted in `hidden-gujarat`, copy it here to:
+Private source of truth: [`kambasana/hidden-gujarat`](https://github.com/kambasana/hidden-gujarat)
 
 ```
-img/scenes/{name}.webp
+hidden-gujarat          khoj-camp-hunt
+art + engine + tests    public host / Pages / PWA
+dist/assets/districts → img/scenes/
 ```
 
-The player also looks at repo root and `./assets/districts/`.
+## Modes
 
-## Do not
+- Level camps — painted places, unlock in order
+- Endless — new seed each wave
+- Hints Open or Locked
+- EN / ગુ / both
 
-- Do not keep a second art catalogue here.
-- Do not ship stick-figure crowds as the product look.
+## Deploy
+
+GitHub Pages deploys from `main` via `.github/workflows/pages.yml`.
+
+Cloudflare Pages (optional):
+
+1. Create application → Connect `kambasana/khoj-camp-hunt`
+2. Framework: None. Build command empty. Output: `/`
+3. Live at `https://khoj-camp-hunt.pages.dev`
+
+## Sync boards
+
+In `hidden-gujarat` add secret `PUBLIC_PWA_TOKEN` (Contents write on this repo),
+then run **Sync accepted boards to public PWA**.
+
+Or copy by hand:
+
+```
+cp hidden-gujarat/dist/assets/districts/*-district-*.webp img/scenes/
+```
+
+Skip `*-preview.webp`. Until boards arrive, the Pages workflow paints stand-ins
+and the player falls back to a canvas scene so the hunt still runs.
