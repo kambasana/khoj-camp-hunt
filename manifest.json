@@ -1,0 +1,15 @@
+{
+  "name": "Khoj — Camp Hunt",
+  "short_name": "Khoj",
+  "description": "A Where's-Wally style camp hunt. Procedural crowds, Gujarati festival camps, endless or level mode.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#fffaf2",
+  "theme_color": "#1a1a1a",
+  "lang": "en",
+  "icons": [
+    { "src": "./icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
+  ]
+}
