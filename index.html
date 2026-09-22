@@ -6,8 +6,8 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="theme-color" content="#1a1a1a">
-<meta name="description" content="Khoj — a procedural camp hunt with a Gujarati heart.">
-<title>Khoj — Camp Hunt</title>
+<meta name="description" content="Khoj — find hidden things in painted Gujarati districts.">
+<title>Khoj — Hidden Gujarat</title>
 <link rel="manifest" href="./manifest.json">
 <link rel="apple-touch-icon" href="./icon.svg">
 <style>
@@ -74,7 +74,7 @@ html,body{margin:0;height:100%;overflow:hidden;background:#ebe4d6;color:var(--in
 <div id="stage">
   <canvas id="scene"></canvas>
   <div class="hud" id="top">
-    <div class="chip" id="titleChip">Khoj<small id="subChip">Camp</small></div>
+    <div class="chip" id="titleChip">Khoj<small id="subChip">ખોજ</small></div>
     <div class="row">
       <button class="ib" id="hintBtn" aria-label="Hint">?</button>
       <button class="ib" id="menuBtn" aria-label="Menu">☰</button>
@@ -90,8 +90,8 @@ html,body{margin:0;height:100%;overflow:hidden;background:#ebe4d6;color:var(--in
   <div class="modal open" id="home">
     <div class="card">
       <h1>Khoj <span class="gu">ખોજ</span></h1>
-      <p>A camp-hunt in the ink style. Crowds are built from a reusable kit — faces, builds, hair, hats, hands, clothes — then dropped into Gujarati-flavoured places.</p>
-      <p class="gu">ટોળામાં છુપાયેલા લોકો શોધો. પતંગ, પાઘડી, ગરબા.</p>
+      <p>Find the hidden things in painted Gujarati places — Uttarayan terraces, bandhani yards, the Rann, Navratri nights.</p>
+      <p class="gu">દ્રશ્યમાં છુપાયેલી વસ્તુઓ શોધો. પતંગ, બાંધણી, ગરબા.</p>
       <div class="actions">
         <button class="cardBtn pri" id="btnLevels">Level camps</button>
         <button class="cardBtn" id="btnEndless">Endless</button>
@@ -100,7 +100,7 @@ html,body{margin:0;height:100%;overflow:hidden;background:#ebe4d6;color:var(--in
       <div class="opt"><span>Hints <span class="gu">ઈશારા</span></span><button id="optHints" class="on">Open</button></div>
       <div class="opt"><span>Sound</span><button id="optSfx" class="on">On</button></div>
       <div class="opt"><span>Language</span><button id="optLang">EN / ગુ</button></div>
-      <p class="gu" style="margin-top:10px;font-size:12px">Install from the browser menu for a home-screen app. Works offline after first load.</p>
+      <p class="gu" style="margin-top:10px;font-size:12px">Add to Home Screen. Works offline after the first load.</p>
     </div>
   </div>
   <div class="modal" id="menu">
@@ -116,7 +116,7 @@ html,body{margin:0;height:100%;overflow:hidden;background:#ebe4d6;color:var(--in
   </div>
   <div class="modal" id="win">
     <div class="card">
-      <h2 id="winTitle">Camp cleared</h2>
+      <h2 id="winTitle">Scene cleared</h2>
       <p id="winText"></p>
       <div class="actions">
         <button class="cardBtn pri" id="nextBtn">Next</button>
