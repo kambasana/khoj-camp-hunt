@@ -41,7 +41,7 @@ const extraLevelMetadata = [
     },
     "difficulty": {
       "en": "Challenging",
-      "gu": "પડકારજનક"
+      "gu": "કઠિન"
     },
     "image": "./assets/scenes/ahmedabad.webp",
     "preview": "./assets/scenes/ahmedabad-preview.webp",
@@ -179,7 +179,7 @@ const acceptedDistrictMetadata = Object.freeze({
   ],
   jamnagar: [
     {en: 'Bandhani Atelier', gu: 'બાંધણીનું આંગણું'},
-    {en: 'Caravan Courtyard', gu: 'કારવાંનું આંગણું'},
+    {en: 'Caravan Courtyard', gu: 'કાફલાનું આંગણું'},
     {en: 'Dye Courtyard', gu: 'રંગકામનું આંગણું'},
     {en: 'Lakeside Bazaar', gu: 'તળાવકાંઠાનું બજાર'},
   ],

@@ -15,7 +15,7 @@ const navratri = {
   },
   "difficulty": {
     "en": "Challenging",
-    "gu": "પડકારજનક"
+    "gu": "કઠિન"
   },
   "image": "./img/scenes/navratri-district-1.webp",
   "preview": "./img/scenes/navratri-district-1-preview.webp",
